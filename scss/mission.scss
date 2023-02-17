@@ -1,0 +1,92 @@
+.missionCont{
+    width: 100%;
+    height: 100vh;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    //background-color: blue;
+
+    h1{
+        margin-top: 70px;
+        font-size: 70px;
+    }
+
+    .mission{
+        margin-top: 30px;
+        width: 100%;
+        height: 90%;
+        //background-color: blue;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .infoCont{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        flex: 0.5;
+        //width: 800px;
+        height: 80%;
+        align-items: center;
+        //background-color: white;
+
+        p{
+            font-size: 35px;
+        }
+
+        }
+
+        .creaturePic{
+            //width: 500px;
+            flex: 0.4;
+            height: 80%;
+            background-image: url(../images/EmorphAdverse_Transparent.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+
+    .missionTwo{
+        margin-top: 30px;
+        width: 100%;
+        height: 90%;
+        //background-color: blue;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-bottom: 50px;
+
+        .infoContTwo{
+        //margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        flex: 0.5;
+        //width: 800px;
+        height: 80%;
+        align-items: center;
+        //background-color: white;
+
+        p{
+            font-size: 35px;
+        }
+
+        }
+
+        .bookPic{
+            //width: 500px;
+            flex: 0.4;
+            height: 80%;
+            background-image: url(../images/book.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+}

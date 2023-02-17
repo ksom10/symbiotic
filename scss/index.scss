@@ -1,0 +1,67 @@
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .image-container{
+        //margin-top: 50px;
+        //width: 500px;
+        flex: 0.4;
+        height: 80%;
+        background-image: url(../images/Emorph_Transparent.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .game-container{
+        //margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        flex: 0.5;
+        //width: 800px;
+        height: 80%;
+        align-items: center;
+        //background-color: white;
+        
+
+        .text-container{
+            height: 45%;
+            width: 100%;
+            //background-color: aqua;
+
+            p{
+                font-size: 40px;
+                //color: aqua;
+            }
+        }
+
+        .play-container{
+            margin-top: 20px;
+            height: 45%;
+            width: 500px;
+            border: 4px solid black;
+            background-image: linear-gradient( rgba(0,0,0, .5)), url(../images/homepageTEXT.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .play-button{
+                height: 50%;
+                width: 200px;
+                background-image: url(../images/play.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                cursor: pointer;
+            }
+        }
+    }
+}

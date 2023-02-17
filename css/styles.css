@@ -1,0 +1,520 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-image: url(../images/homepageNOTEXT.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+nav .title {
+  height: 100%;
+  width: 25%;
+  background-image: url(../images/homepageTEXTONLY.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav .links {
+  margin-left: 50px;
+  width: 40%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav .links a {
+  margin-left: 50px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #f6deba;
+}
+nav h1 {
+  font-size: 60px;
+  margin-left: 30px;
+  color: #38434b;
+}
+nav .logo {
+  background-image: url(../images/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 55px;
+  width: 217px;
+  margin-left: -60px;
+}
+nav .navicon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 80px;
+  top: 25px;
+  position: absolute;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+nav .navicon .line {
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  margin: auto;
+  border-radius: 2px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.container .image-container {
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+  height: 80%;
+  background-image: url(../images/Emorph_Transparent.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container .game-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  height: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .game-container .text-container {
+  height: 45%;
+  width: 100%;
+}
+.container .game-container .text-container p {
+  font-size: 40px;
+}
+.container .game-container .play-container {
+  margin-top: 20px;
+  height: 45%;
+  width: 500px;
+  border: 4px solid black;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(../images/homepageTEXT.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/homepageTEXT.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container .game-container .play-container .play-button {
+  height: 50%;
+  width: 200px;
+  background-image: url(../images/play.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.exitBtn {
+  position: fixed;
+  top: 10px !important;
+  left: 120px !important;
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+  background-image: url(../images/home.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.teamCont {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.teamCont h1 {
+  font-size: 70px;
+}
+.teamCont .team {
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.teamCont .team .memberOne {
+  height: 100%;
+  width: 23%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5%;
+}
+.teamCont .team .memberOne .photo {
+  height: 45%;
+  width: 100%;
+  background-image: url(../images/teddy_headshot_old.jpg);
+  background-position: 75% 45%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5%;
+  border: solid 1px black;
+}
+.teamCont .team .memberOne .info {
+  height: 55%;
+  width: 95%;
+}
+.teamCont .team .memberOne .info h2 {
+  font-size: 40px;
+}
+.teamCont .team .memberOne .info h3 {
+  font-size: 30px;
+}
+.teamCont .team .memberOne .info p {
+  font-size: 20px;
+}
+.teamCont .team .memberTwo {
+  height: 100%;
+  width: 23%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5%;
+}
+.teamCont .team .memberTwo .photo {
+  height: 45%;
+  width: 100%;
+  background-image: url(../images/Laura_SelfPortrait.jpg);
+  background-position: 75% 45%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5%;
+  border: solid 1px black;
+}
+.teamCont .team .memberTwo .info {
+  height: 55%;
+  width: 95%;
+}
+.teamCont .team .memberTwo .info h2 {
+  font-size: 40px;
+}
+.teamCont .team .memberTwo .info h3 {
+  font-size: 30px;
+}
+.teamCont .team .memberTwo .info p {
+  font-size: 20px;
+}
+.teamCont .team .memberThree {
+  height: 100%;
+  width: 23%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5%;
+}
+.teamCont .team .memberThree .photo {
+  height: 45%;
+  width: 100%;
+  background-image: url(../images/kam.jpg);
+  background-position: 75% 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5%;
+  border: solid 1px black;
+}
+.teamCont .team .memberThree .info {
+  height: 55%;
+  width: 95%;
+}
+.teamCont .team .memberThree .info h2 {
+  font-size: 40px;
+}
+.teamCont .team .memberThree .info h3 {
+  font-size: 30px;
+}
+.teamCont .team .memberThree .info p {
+  font-size: 20px;
+}
+.teamCont .team .memberFour {
+  height: 100%;
+  width: 23%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5%;
+}
+.teamCont .team .memberFour .photo {
+  height: 45%;
+  width: 100%;
+  background-image: url(../images/Christina_Headshot.jpg);
+  background-position: 75% 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5%;
+  border: solid 1px black;
+}
+.teamCont .team .memberFour .info {
+  height: 55%;
+  width: 95%;
+}
+.teamCont .team .memberFour .info h2 {
+  font-size: 40px;
+}
+.teamCont .team .memberFour .info h3 {
+  font-size: 30px;
+}
+.teamCont .team .memberFour .info p {
+  font-size: 20px;
+}
+
+.missionCont {
+  width: 100%;
+  height: 100vh;
+  margin-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.missionCont h1 {
+  margin-top: 70px;
+  font-size: 70px;
+}
+.missionCont .mission {
+  margin-top: 30px;
+  width: 100%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.missionCont .mission .infoCont {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  height: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.missionCont .mission .infoCont p {
+  font-size: 35px;
+}
+.missionCont .mission .creaturePic {
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+  height: 80%;
+  background-image: url(../images/EmorphAdverse_Transparent.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.missionCont .missionTwo {
+  margin-top: 30px;
+  width: 100%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 50px;
+}
+.missionCont .missionTwo .infoContTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  height: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.missionCont .missionTwo .infoContTwo p {
+  font-size: 35px;
+}
+.missionCont .missionTwo .bookPic {
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+  height: 80%;
+  background-image: url(../images/book.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
